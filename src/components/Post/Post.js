@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Post = (props) => {
-    const {userId,id,title,body}=props.post;
+    const {id,title,body}=props.post;
     const history=useNavigate();
     const showComments=(id)=>{
         const url=`post/${id}`;
